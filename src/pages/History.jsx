@@ -11,9 +11,9 @@ const historyItems = [
 
 export default function History() {
     return (
-        <div className="p-6 pt-8 pb-24 h-full flex flex-col">
+        <div className="p-6 pt-8 pb-24 h-full flex flex-col lg:p-10">
             <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-bold text-stone-800">History</h1>
+                <h1 className="text-2xl lg:text-3xl font-bold text-stone-800">History</h1>
             </div>
 
             {/* Search Bar */}

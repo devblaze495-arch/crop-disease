@@ -9,11 +9,11 @@ export default function Dashboard() {
     const navigate = useNavigate();
 
     return (
-        <div className="p-6 pt-8 pb-24">
+        <div className="p-6 pt-8 pb-24 lg:p-10 lg:pt-12">
             <div className="flex justify-between items-center mb-6">
                 <div>
-                    <p className="text-stone-500 text-sm">Good Morning,</p>
-                    <h1 className="text-2xl font-bold text-stone-800">Farmer Vijay</h1>
+                    <p className="text-stone-500 text-sm lg:text-base">Good Morning,</p>
+                    <h1 className="text-2xl lg:text-3xl font-bold text-stone-800">Farmer Vijay</h1>
                 </div>
                 <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold border-2 border-white shadow-sm">
                     V
@@ -31,7 +31,7 @@ export default function Dashboard() {
             <div className="grid grid-cols-1 gap-4 mb-8">
                 <Button
                     onClick={() => navigate('/scan')}
-                    className="bg-primary-700 hover:bg-primary-800 text-white py-6 shadow-lg shadow-primary-900/10 flex flex-col gap-2 items-center justify-center h-40 rounded-2xl relative overflow-hidden group"
+                    className="bg-primary-700 hover:bg-primary-800 text-white py-6 lg:py-8 shadow-lg shadow-primary-900/10 flex flex-col gap-2 items-center justify-center h-40 lg:h-48 rounded-2xl relative overflow-hidden group"
                 >
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm mb-1 group-hover:scale-110 transition-transform duration-300">
@@ -43,7 +43,7 @@ export default function Dashboard() {
 
                 <Button
                     variant="secondary"
-                    className="py-4 border-dashed border-2 border-stone-300 bg-stone-50 hover:border-primary-500 hover:bg-stone-100 text-stone-600 gap-3"
+                    className="py-4 lg:py-5 border-dashed border-2 border-stone-300 bg-stone-50 hover:border-primary-500 hover:bg-stone-100 text-stone-600 gap-3"
                 >
                     <Upload className="w-5 h-5 text-stone-400" />
                     <span>Upload Image from Gallery</span>

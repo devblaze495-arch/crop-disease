@@ -124,9 +124,9 @@ export default function Scan() {
 
                 {/* Scanning Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center p-6">
-                    <div className="relative w-full max-w-xs">
+                    <div className="relative w-full max-w-xs lg:max-w-md">
                         {/* Scanning Frame */}
-                        <div className="relative aspect-square border-2 border-white/60 rounded-3xl overflow-hidden bg-transparent">
+                        <div className="relative aspect-square border-2 border-white/60 rounded-3xl overflow-hidden bg-transparent lg:rounded-4xl">
                             {/* Corner Markers */}
                             <div className="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-primary-400 rounded-tl-lg" />
                             <div className="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-primary-400 rounded-tr-lg" />
@@ -152,10 +152,10 @@ export default function Scan() {
                                         className="flex flex-col items-center gap-3"
                                     >
                                         <Loader className="w-8 h-8 text-primary-400 animate-spin" />
-                                        <p className="text-white text-sm font-semibold">Analyzing...</p>
+                                        <p className="text-white text-sm lg:text-base font-semibold">Analyzing...</p>
                                     </motion.div>
                                 ) : (
-                                    <p className="text-white/80 text-sm font-medium bg-black/40 backdrop-blur-sm px-4 py-2 rounded-full text-center">
+                                    <p className="text-white/80 text-sm lg:text-base font-medium bg-black/40 backdrop-blur-sm px-4 py-2 rounded-full text-center">
                                         Place leaf inside frame
                                     </p>
                                 )}

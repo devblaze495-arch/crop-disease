@@ -173,13 +173,14 @@ export default function Community() {
                                 }`}>
                                     {post.disease}
                                 </span>
+                                <div className="p-0 pb-24 h-full flex flex-col bg-stone-50 lg:p-8">
                                 {post.severity !== 'None' && (
                                     <span className={`text-xs font-medium px-3 py-1 rounded-full ${
                                         post.severity === 'High'
                                             ? 'bg-red-100 text-red-700'
                                             : 'bg-yellow-100 text-yellow-700'
                                     }`}>
-                                        {post.severity}
+                                                    Community
                                     </span>
                                 )}
                             </div>
@@ -190,7 +191,7 @@ export default function Community() {
                         </p>
 
                         {post.image && (
-                            <div className="my-3 mx-4 rounded-xl overflow-hidden shadow-sm">
+                                            className="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white py-3 rounded-2xl font-semibold flex items-center justify-center gap-2 shadow-lg shadow-primary-900/20 transition-all lg:py-4 lg:text-lg"
                                 <img src={post.image} alt="Post content" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300" />
                             </div>
                         )}
@@ -247,7 +248,7 @@ export default function Community() {
                                 <X className="w-6 h-6 text-stone-600" />
                             </button>
                         </div>
-
+                                                <p className="px-4 pt-3 text-stone-700 text-sm lg:text-base leading-relaxed whitespace-pre-wrap">
                         <form onSubmit={handlePost} className="space-y-4">
                             {/* Image Upload */}
                             <div>
@@ -298,7 +299,7 @@ export default function Community() {
                                 >
                                     <option value="">Select crop type</option>
                                     <option value="Rice">Rice</option>
-                                    <option value="Wheat">Wheat</option>
+                                                className="w-full bg-white rounded-t-3xl p-6 max-h-[90vh] overflow-y-auto lg:max-w-2xl lg:mx-auto lg:rounded-3xl lg:p-8"
                                     <option value="Cotton">Cotton</option>
                                     <option value="Sugarcane">Sugarcane</option>
                                     <option value="Tomato">Tomato</option>
