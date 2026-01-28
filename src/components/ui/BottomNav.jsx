@@ -14,7 +14,7 @@ export default function BottomNav() {
     ];
 
     return (
-        <div className="absolute bottom-0 w-full bg-white border-t border-stone-200 px-3 py-2 pb-6 z-50 flex justify-between items-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <div className="absolute bottom-0 w-full bg-white border-t border-stone-200 px-3 py-2 pb-6 z-50 flex justify-between items-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)] lg:hidden">
             {navItems.map((item) => (
                 <NavLink
                     key={item.path}
