@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, ScanLine, History, User } from 'lucide-react';
+import { Share2, Home, ScanLine, History, User } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { motion } from 'framer-motion';
 
 export default function BottomNav() {
     const navItems = [
+        { path: '/community', label: 'Community', icon: Share2 },
         { path: '/dashboard', label: 'Home', icon: Home },
         { path: '/scan', label: 'Scan', icon: ScanLine, isPrimary: true },
         { path: '/history', label: 'History', icon: History },
@@ -13,7 +14,7 @@ export default function BottomNav() {
     ];
 
     return (
-        <div className="absolute bottom-0 w-full bg-white border-t border-stone-200 px-6 py-2 pb-6 z-50 flex justify-between items-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <div className="absolute bottom-0 w-full bg-white border-t border-stone-200 px-3 py-2 pb-6 z-50 flex justify-between items-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
             {navItems.map((item) => (
                 <NavLink
                     key={item.path}
@@ -22,7 +23,8 @@ export default function BottomNav() {
                 >
                     {({ isActive }) => (
                         <div className={cn(
-                            "flex flex-col items-center justify-center gap-1 w-16 transition-colors duration-300",
+                            "flex flex-col items-center justify-center gap-1 transition-colors duration-300",
+                            item.isPrimary ? "w-14" : "w-12",
                             isActive ? "text-primary-700" : "text-stone-400 hover:text-stone-600"
                         )}>
                             {item.isPrimary ? (
@@ -47,7 +49,7 @@ export default function BottomNav() {
                                         whileTap={{ scale: 0.9 }}
                                         transition={{ type: "spring", stiffness: 400, damping: 17 }}
                                     >
-                                        <item.icon className={cn("w-6 h-6", isActive && "fill-current")} />
+                                        <item.icon className={cn("w-5 h-5", isActive && "fill-current")} />
                                     </motion.div>
                                     {isActive && (
                                         <motion.div
@@ -58,7 +60,7 @@ export default function BottomNav() {
                                     )}
                                 </div>
                             )}
-                            <span className={cn("text-xs font-medium transition-all duration-300",
+                            <span className={cn("text-xs font-medium transition-all duration-300 text-center",
                                 item.isPrimary && "mt-1",
                                 isActive ? "font-bold" : "font-normal"
                             )}>
