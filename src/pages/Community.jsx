@@ -116,9 +116,10 @@ export default function Community() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           className="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white py-3 rounded-2xl font-semibold flex items-center justify-center gap-2 shadow-lg shadow-primary-900/20 transition-all lg:py-3 lg:text-base"
-                    <Plus className="w-5 h-5" /> Share Your Crop Status
-                </motion.button>
-            </div>
+        >
+          <Plus className="w-5 h-5" /> Share Your Crop Status
+        </motion.button>
+      </div>
 
             {/* Feed */}
             <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
