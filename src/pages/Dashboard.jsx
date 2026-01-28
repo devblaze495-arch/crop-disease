@@ -9,13 +9,13 @@ export default function Dashboard() {
     const navigate = useNavigate();
 
     return (
-        <div className="p-6 pt-8 pb-24 lg:p-10 lg:pt-12">
-            <div className="flex justify-between items-center mb-6">
+        <div className="p-6 pt-8 pb-24 lg:p-8 lg:pt-10 max-w-4xl mx-auto">
+            <div className="flex justify-between items-center mb-6 lg:mb-8">
                 <div>
                     <p className="text-stone-500 text-sm lg:text-base">Good Morning,</p>
                     <h1 className="text-2xl lg:text-3xl font-bold text-stone-800">Farmer Vijay</h1>
                 </div>
-                <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold border-2 border-white shadow-sm">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold border-2 border-white shadow-sm">
                     V
                 </div>
             </div>

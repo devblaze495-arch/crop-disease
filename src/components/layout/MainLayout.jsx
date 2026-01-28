@@ -11,13 +11,13 @@ export default function MainLayout() {
 
     return (
         <div className="min-h-screen bg-stone-50 flex flex-col relative min-h-[100dvh]">
-            {/* Container: mobile stays single column centered; desktop shows a card with sidebar */}
-            <div className="w-full max-w-md mx-auto lg:max-w-6xl lg:px-8 lg:py-8">
-                <div className="lg:grid lg:grid-cols-[220px_1fr] lg:gap-6 lg:items-start">
+            {/* Container: mobile stays single column centered; desktop shows sidebar + card layout */}
+            <div className="w-full max-w-md mx-auto lg:max-w-7xl lg:px-6 lg:py-6">
+                <div className="lg:grid lg:grid-cols-[240px_1fr] lg:gap-6 lg:items-start">
 
                     {/* Desktop Sidebar */}
-                    <aside className="hidden lg:flex flex-col gap-6 p-4">
-                        <div className="w-60 bg-white rounded-2xl shadow-sm border border-stone-100 p-4 sticky top-6">
+                    <aside className="hidden lg:flex flex-col gap-6">
+                        <div className="w-full bg-white rounded-2xl shadow-sm border border-stone-100 p-5 sticky top-6">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 text-lg font-bold">V</div>
                                 <div>
@@ -57,7 +57,7 @@ export default function MainLayout() {
 
                     {/* Main Card / Content */}
                     <div className="w-full bg-white lg:rounded-3xl lg:shadow-lg overflow-hidden">
-                        <main className="flex-1 overflow-y-auto pb-24 min-h-[100dvh]">
+                        <main className="flex-1 overflow-y-auto pb-24 lg:pb-8">
                             <Outlet />
                         </main>
 

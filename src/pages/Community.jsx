@@ -96,27 +96,26 @@ export default function Community() {
     };
 
     return (
-        <div className="p-0 pb-24 h-full flex flex-col bg-stone-50 lg:p-8">
-            {/* Header */}
-            <div className="bg-white p-6 sticky top-0 z-10 shadow-sm border-b border-stone-100">
-                <div className="flex justify-between items-center mb-4">
-                    <div>
-                        <h1 className="text-2xl font-bold text-stone-800 flex items-center gap-2">
-                            <Users className="w-6 h-6 text-primary-600" /> Community
-                        </h1>
-                        <p className="text-xs text-stone-500 mt-1">Share insights, learn from farmers</p>
-                    </div>
-                    <button className="p-2 bg-stone-100 rounded-full text-stone-600">
-                        <MoreHorizontal className="w-5 h-5" />
-                    </button>
-                </div>
+    <div className="p-0 pb-24 h-full flex flex-col bg-stone-50 lg:p-8 max-w-5xl mx-auto">
+      {/* Header */}
+      <div className="bg-white p-6 lg:bg-transparent lg:p-0 lg:mb-6 sticky top-0 lg:static z-10 lg:z-0 shadow-sm lg:shadow-none border-b lg:border-0 border-stone-100">
+        <div className="flex justify-between items-center mb-4">
+          <div>
+            <h1 className="text-2xl lg:text-3xl font-bold text-stone-800 flex items-center gap-2">
+              <Users className="w-6 h-6 text-primary-600" /> Community
+            </h1>
+            <p className="text-xs text-stone-500 mt-1">Share insights, learn from farmers</p>
+          </div>
+          <button className="hidden lg:flex p-2 bg-stone-100 rounded-full text-stone-600">
+            <MoreHorizontal className="w-5 h-5" />
+          </button>
+        </div>
 
-                <motion.button
-                    onClick={() => setShowUploadModal(true)}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white py-3 rounded-2xl font-semibold flex items-center justify-center gap-2 shadow-lg shadow-primary-900/20 transition-all lg:py-4 lg:text-lg"
-                >
+        <motion.button
+          onClick={() => setShowUploadModal(true)}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white py-3 rounded-2xl font-semibold flex items-center justify-center gap-2 shadow-lg shadow-primary-900/20 transition-all lg:py-3 lg:text-base"
                     <Plus className="w-5 h-5" /> Share Your Crop Status
                 </motion.button>
             </div>

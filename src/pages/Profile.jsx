@@ -11,13 +11,13 @@ export default function Profile() {
     ];
 
     return (
-        <div className="p-6 pt-8 pb-24 lg:p-10">
-            <div className="flex flex-col items-center mb-8">
+        <div className="p-6 pt-8 pb-24 lg:p-8 lg:pt-10 max-w-3xl mx-auto">
+            <div className="flex flex-col items-center mb-8 lg:mb-12">
                 <div className="w-24 h-24 lg:w-28 lg:h-28 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 text-3xl lg:text-4xl font-bold border-4 border-white shadow-lg mb-4">
                     V
                 </div>
                 <h1 className="text-2xl lg:text-3xl font-bold text-stone-800">Vijay Patil</h1>
-                <p className="text-stone-500">Karnataka, India</p>
+                <p className="text-stone-500 text-sm lg:text-base">Karnataka, India</p>
             </div>
 
             <div className="bg-white rounded-3xl shadow-sm border border-stone-100 overflow-hidden mb-6">

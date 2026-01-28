@@ -11,8 +11,8 @@ const historyItems = [
 
 export default function History() {
     return (
-        <div className="p-6 pt-8 pb-24 h-full flex flex-col lg:p-10">
-            <div className="flex justify-between items-center mb-6">
+        <div className="p-6 pt-8 pb-24 h-full flex flex-col lg:p-8 lg:pt-10 max-w-4xl mx-auto">
+            <div className="flex justify-between items-center mb-6 lg:mb-8">
                 <h1 className="text-2xl lg:text-3xl font-bold text-stone-800">History</h1>
             </div>
 
